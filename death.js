@@ -26,6 +26,13 @@ function enemyDeath(array) {
   }
 }
 
+class Effect {
+  constructor() {
+    this.hp = 1;
+  }
+  display() {}
+}
+
 class DelayEffect extends Effect {
   constructor(frames) {
     super();
@@ -65,11 +72,4 @@ class DeathEffect extends Effect {
       this.opacity -= 1;
     }
   }
-}
-
-class Effect {
-  constructor() {
-    this.hp = 1;
-  }
-  display() {}
 }
