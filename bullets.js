@@ -55,6 +55,10 @@ class Opshell {
   }
 }
 
+function parabola(m, x, h, v) { //y=m(x-h)**2+v
+  return m * (Math.pow(x - h, 2)) + v;
+}
+
 class Boomerang {
   constructor(x, y, targetX, targetY, travelFrames) {
     this.startX = x;
